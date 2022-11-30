@@ -34,13 +34,13 @@ def getRandomMinimalLogo()-> str:
     return getRandomElementInAList(logos) 
  
 def main():
-    if(isClassicMode(sys.argv[1])):
+    print(len(sys.argv) )
+    if(len(sys.argv) != 2 or isClassicMode(sys.argv[1]) ):
         command = getRandomClassicLogo()
         subprocess.run(["neofetch", "--ascii_distro", command])
     elif(isMinimalMode(sys.argv[1])):
         command = getRandomMinimalLogo() 
         subprocess.run(["neofetch", "--ascii_distro", command+"_small"])
-
         
 if __name__ == "__main__":
     main()
