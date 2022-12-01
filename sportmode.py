@@ -2,67 +2,50 @@ import json
 import sys
 import subprocess
 import random
+from shutil import which
 
 
-
-file = open("/home/tut/Scripts/logos.json")
-data = json.load(file)
-
-def isClassicMode(mode : str) -> bool:
-    if(mode == '1' or mode.casefold() == 'classic' ): return True
-    return False
+def get_random_element_in_a_list(list):
+    return list[random.randint(0, len(list) - 1)]
 
 
-def isMinimalMode(mode :str)-> bool:
-    if(mode == '2' or mode.casefold() == 'minimal' ):return True
-    return False
-
-
-def getRandomElementInAList(list):
-    return list[random.randint(0,len(list)-1)] 
-
-def getRandomClassicLogo() -> str:
+def get_random_classic_logo(data) -> str:
     logos = []
     for logo in data['logos']:
-            logos.append(logo)
-    return getRandomElementInAList(logos)
-    
-def getRandomMinimalLogo()-> str:
+        logos.append(logo)
+    return get_random_element_in_a_list(logos)
+
+
+def get_random_minimal_logo(data) -> str:
     logos = []
     for logo in data['small_logos']:
         logos.append(logo)
-    return getRandomElementInAList(logos) 
- 
-def main():
-    if(len(sys.argv) != 2 or isClassicMode(sys.argv[1]) ):
-        command = getRandomClassicLogo()
-        subprocess.run(["neofetch", "--ascii_distro", command])
-    elif(isMinimalMode(sys.argv[1])):
-        command = getRandomMinimalLogo() 
-        subprocess.run(["neofetch", "--ascii_distro", command+"_small"])
-        
+    return get_random_element_in_a_list(logos)
+
+
+def main(logos, mode):
+    if mode == '1' or mode.lower() == 'classic':
+        opt = get_random_classic_logo(logos)
+    elif mode == '2' or mode.lower() == 'minimal':
+        opt = get_random_minimal_logo(logos)
+        opt = f"{opt}_small"
+    else:
+        print("Invalid mode")
+        sys.exit(1)
+
+    subprocess.run(["neofetch", "--ascii_distro", opt])
+
+
 if __name__ == "__main__":
-    main()
+    assert which("neofetch") is not None, "Neofetch is not installed"
 
+    with open("logos.json") as f:
+        logos = json.load(f)
 
+    if len(sys.argv) < 2:
+        print("Usage: python3 sportmode.py [classic | minimal]")
+        sys.exit(1)
 
+    mode = sys.argv[1]
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    main(logos, mode)
