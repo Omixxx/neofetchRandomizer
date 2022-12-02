@@ -63,7 +63,7 @@
 ## About The Project
 
 <img src="imgs/screen.png" alt="Alt text"></img> \
-Do you find your terminal boring? Well that's what i was facing at least. So i end up making this script in order to help me (and you) having a more enjoiable terminal.
+I made this script in order to help me (and you) having a more enjoiable terminal.
 
 <!-- GETTING STARTED -->
 
