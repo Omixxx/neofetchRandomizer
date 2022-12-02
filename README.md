@@ -140,7 +140,7 @@ Don't forget to give the project a star! Thanks again!
 
 ## Contact
 
-TüT - <a href="https://t.me/Omix99"> Telegram</a> - <a href="m.omicini1@studenti.unimol.it"> E-Mail</a>
+TüT - <a href="https://t.me/Omix99"> Telegram</a> - Email: m.omicini1@studenti.unimol.it
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
