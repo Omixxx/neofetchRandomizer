@@ -86,9 +86,9 @@ Do you find your terminal boring? Well that's what i was facing at least. So i e
    git clone git@github.com:Omixxx/neofetchRandomizer.git ./neofetchRandomizer && sudo mv neofetchRandomizer /opt/
    ````
 2. Give all the necessary permissions
-`sh
+   ```sh
     sudo chmod 777 /opt/neofetchRandomizer/sportmode.py
-    `
+   ```
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- USAGE EXAMPLES -->
