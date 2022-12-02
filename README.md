@@ -62,7 +62,7 @@
 
 ## About The Project
 
-<img src="imgs/screen.png" alt="Alt text"></img> \
+<img src="imgs/screen.png" alt="Alt text" style="display: inline-block; margin: 0 auto; max-width: 300px"></img> \
 I made this script in order to help me (and you) having a more enjoiable terminal.
 
 <!-- GETTING STARTED -->
