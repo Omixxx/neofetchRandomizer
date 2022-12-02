@@ -62,7 +62,7 @@
 
 ## About The Project
 
-![alt text](https://github.com/neofetchRandomizer/Omixxx/imgs/screen.jpg/) \
+<img src="imgs/screen.png" alt="Alt text"></img> \
 Do you find your terminal boring? Well that's what i was facing at least. So i end up making this script in order to help me (and you) having a more enjoiable terminal.
 
 <!-- GETTING STARTED -->
@@ -83,7 +83,7 @@ Do you find your terminal boring? Well that's what i was facing at least. So i e
 
 1. Clone the repo
    ````sh
-   git clone git@github.com:Omixxx/neofetchRandomizer.git ./neofetchRandomizer && sudo mv neofetchRandomizer /opt/   ```
+   git clone git@github.com:Omixxx/neofetchRandomizer.git ./neofetchRandomizer && sudo mv neofetchRandomizer /opt/
    ````
 2. Give all the necessary permissions
 `sh
