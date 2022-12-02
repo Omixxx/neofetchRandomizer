@@ -100,9 +100,8 @@ Palace the above command in the configuration file of you favourite shell.
 ```sh
 [ -e /opt/neofetchRandomizer/sportmode.py ] && /opt/neofetchRandomizer/./sportmode.py minimal
 ```
-
-</br>
-Remember that you can replace the `minimal` param with the <a href="#supported-params"> parameter </a> that suits you more.
+\
+Remember that you can replace the ` minimal` param with the <a href="#supported-params"> parameter </a> that suits you more.
 
 Now whenever you open the shell neofetch will retrive and show you a random logo!
 
