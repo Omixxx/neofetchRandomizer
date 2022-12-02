@@ -147,8 +147,6 @@ TüT - <a href="https://t.me/Omix99"> Telegram</a> - Email: m.omicini1@studenti.
 
 ## Acknowledgments
 
-Use this space to list resources you find helpful and would like to give credit to. I've included a few of my favorites to kick things off!
-
 - [Neofetch](https://github.com/dylanaraps/neofetch)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
