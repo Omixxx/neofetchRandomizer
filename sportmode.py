@@ -1,4 +1,6 @@
+#!/usr/bin/env python
 import json
+import os
 import sys
 import subprocess
 import random
@@ -31,6 +33,7 @@ def main(logos, mode):
         opt = f"{opt}_small"
     else:
         print("Invalid mode")
+        print()
         sys.exit(1)
 
     subprocess.run(["neofetch", "--ascii_distro", opt])
@@ -38,8 +41,9 @@ def main(logos, mode):
 
 if __name__ == "__main__":
     assert which("neofetch") is not None, "Neofetch is not installed"
-
-    with open("logos.json") as f:
+    
+    file_path = os.path.realpath(os.path.dirname(__file__)) 
+    with open(file_path + "/logos.json") as f:
         logos = json.load(f)
 
     if len(sys.argv) < 2:
