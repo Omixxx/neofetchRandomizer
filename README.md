@@ -98,7 +98,7 @@ I made this script in order to help me (and you) having a more enjoiable termina
 Palace the above command in the configuration file of you favourite shell.
 
 ```sh
-[ -e /opt/neofetchRandomizer/sportmode.py ] && /opt/neofetchRandomizer/./sportmode.py minimal
+[ -f /opt/neofetchRandomizer/sportmode.py ] && /opt/neofetchRandomizer/./sportmode.py minimal
 ```
 \
 Remember that you can replace the ` minimal` param with the <a href="#supported-params"> parameter </a> that suits you more.
