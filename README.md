@@ -95,13 +95,13 @@ I made this script in order to help me (and you) having a more enjoiable termina
 
 ## Usage
 
-Palace the above command in the configuration file of you favourite shell.
+Palace the above command in the configuration file of your favourite shell.
 
 ```sh
 [ -f /opt/neofetchRandomizer/sportmode.py ] && /opt/neofetchRandomizer/./sportmode.py minimal
 ```
 \
-Remember that you can replace the ` minimal` param with the <a href="#supported-params"> parameter </a> that suits you more.
+Remember that you can replace the `minimal` param with the <a href="#supported-params"> parameter </a> that suits you more.
 
 Now whenever you open the shell neofetch will retrive and show you a random logo!
 
